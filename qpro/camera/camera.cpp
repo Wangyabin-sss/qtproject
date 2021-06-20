@@ -21,7 +21,7 @@ camera::~camera()
 void camera::on_camerabacktomain_clicked()  //返回主界面按钮
 {
     camthread.stop();
-    emit change2_camera_ui();
+    emit camera_change2_main_ui();
 }
 
 void camera::on_getoneframe_clicked()   // 抓拍照片

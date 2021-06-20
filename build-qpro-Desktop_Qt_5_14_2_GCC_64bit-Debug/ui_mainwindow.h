@@ -24,6 +24,7 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QPushButton *camera;
+    QPushButton *photo;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -37,6 +38,17 @@ public:
         camera = new QPushButton(centralwidget);
         camera->setObjectName(QString::fromUtf8("camera"));
         camera->setGeometry(QRect(50, 50, 50, 50));
+        camera->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	border: none;\n"
+"	image: url(:/image/camera.png);\n"
+"}"));
+        photo = new QPushButton(centralwidget);
+        photo->setObjectName(QString::fromUtf8("photo"));
+        photo->setGeometry(QRect(180, 50, 50, 50));
+        photo->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	border: none;\n"
+"	image: url(:/image/photo.png);\n"
+"}"));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -55,6 +67,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         camera->setText(QString());
+        photo->setText(QString());
     } // retranslateUi
 
 };

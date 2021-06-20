@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include <QTimer>
+#include <QMessageBox>
 
 namespace Ui {
 class camera;
@@ -33,7 +34,7 @@ public:
     ~camera();
 
 signals:
-    void change2_camera_ui();
+    void camera_change2_main_ui();
 
 private slots:
     void on_camerabacktomain_clicked();

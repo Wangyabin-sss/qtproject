@@ -17,15 +17,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     camera/camera.cpp \
+    photo/photo.cpp  \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     camera/camera.h \
+    photo/photo.h  \
     mainwindow.h
 
 FORMS += \
     camera/camera.ui \
+    photo/photo.ui  \
     mainwindow.ui
 
 # Default rules for deployment.

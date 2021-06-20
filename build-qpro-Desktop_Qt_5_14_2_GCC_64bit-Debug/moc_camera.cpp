@@ -132,7 +132,7 @@ void CameraThread::camerashowimage(QImage _t1)
 }
 struct qt_meta_stringdata_camera_t {
     QByteArrayData data[8];
-    char stringdata0[126];
+    char stringdata0[131];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -142,16 +142,16 @@ struct qt_meta_stringdata_camera_t {
 static const qt_meta_stringdata_camera_t qt_meta_stringdata_camera = {
     {
 QT_MOC_LITERAL(0, 0, 6), // "camera"
-QT_MOC_LITERAL(1, 7, 17), // "change2_camera_ui"
-QT_MOC_LITERAL(2, 25, 0), // ""
-QT_MOC_LITERAL(3, 26, 27), // "on_camerabacktomain_clicked"
-QT_MOC_LITERAL(4, 54, 22), // "on_getoneframe_clicked"
-QT_MOC_LITERAL(5, 77, 23), // "on_showgetframe_clicked"
-QT_MOC_LITERAL(6, 101, 12), // "camshowimage"
-QT_MOC_LITERAL(7, 114, 11) // "timerupdata"
+QT_MOC_LITERAL(1, 7, 22), // "camera_change2_main_ui"
+QT_MOC_LITERAL(2, 30, 0), // ""
+QT_MOC_LITERAL(3, 31, 27), // "on_camerabacktomain_clicked"
+QT_MOC_LITERAL(4, 59, 22), // "on_getoneframe_clicked"
+QT_MOC_LITERAL(5, 82, 23), // "on_showgetframe_clicked"
+QT_MOC_LITERAL(6, 106, 12), // "camshowimage"
+QT_MOC_LITERAL(7, 119, 11) // "timerupdata"
 
     },
-    "camera\0change2_camera_ui\0\0"
+    "camera\0camera_change2_main_ui\0\0"
     "on_camerabacktomain_clicked\0"
     "on_getoneframe_clicked\0on_showgetframe_clicked\0"
     "camshowimage\0timerupdata"
@@ -200,7 +200,7 @@ void camera::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         auto *_t = static_cast<camera *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->change2_camera_ui(); break;
+        case 0: _t->camera_change2_main_ui(); break;
         case 1: _t->on_camerabacktomain_clicked(); break;
         case 2: _t->on_getoneframe_clicked(); break;
         case 3: _t->on_showgetframe_clicked(); break;
@@ -212,7 +212,7 @@ void camera::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (camera::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&camera::change2_camera_ui)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&camera::camera_change2_main_ui)) {
                 *result = 0;
                 return;
             }
@@ -261,7 +261,7 @@ int camera::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void camera::change2_camera_ui()
+void camera::camera_change2_main_ui()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }

@@ -13,7 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     palette.setBrush(backgroundRole(),QBrush(pixmap));
     this->setPalette(palette); // 图片尺寸要和widget等大小 如果图片尺寸小  就会重复排列
 
-    QObject::connect(&cam,SIGNAL(change2_camera_ui()),this,SLOT(ui_camera_hander()));
+    QObject::connect(&cam,SIGNAL(camera_change2_main_ui()),this,SLOT(ui_camera_hander()));
+    QObject::connect(&pho,SIGNAL(photo_change2_main_ui()),this,SLOT(ui_photo_hander()));
 }
 
 MainWindow::~MainWindow()
@@ -22,7 +23,7 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_camera_clicked()
+void MainWindow::on_camera_clicked()  //摄像头app
 {
     this->hide();
     cam.show();
@@ -35,3 +36,19 @@ void MainWindow::ui_camera_hander()
     cam.close();
     this->show();
 }
+
+void MainWindow::on_photo_clicked() //照片app
+{
+    this->hide();
+    pho.show();
+}
+
+void MainWindow::ui_photo_hander()
+{
+    pho.close();
+    this->show();
+}
+
+
+
+

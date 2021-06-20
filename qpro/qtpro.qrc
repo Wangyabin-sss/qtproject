@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>image/background.bmp</file>
+        <file>image/camera.png</file>
+        <file>image/photo.png</file>
     </qresource>
 </RCC>
